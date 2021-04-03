@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Show Match</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="./assets/css/Collapsible-Sidebar.css">
+    <link rel="stylesheet" href="./assets/css/Featured-Movies-1.css">
+    <link rel="stylesheet" href="./assets/css/Featured-Movies.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+<!-- header links here  -->
+    <link rel="stylesheet" href="./assets/assetsH/bootstrapH/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="./assets/assetsH/cssH/hmhub-header.css">
+    <link rel="stylesheet" href="./assets/assetsH/cssH/Pretty-Search-Form.css">
+    <link rel="stylesheet" href="./assets/assetsH/cssH/Search-Input-Responsive-with-Icon.css">
+    <link rel="stylesheet" href="./assets/assetsH/cssH/styles.css">
+<!-- ^^^^^^^^^^^^^^^^^^^^^ -->
+
+</head>
+
+<div id="header">
+    <header>
+        <h1 id="headn"><i class="fa fa-video-camera" aria-hidden="true"></i>SHOW MATCH<i class="fa fa-video-camera" aria-hidden="true"></i></h1>
+    </header>
+</div>
+
+<body><div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Show Match</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+
+            <li>
+                
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Search History</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                </ul>
+                    <button type="button" id="btnClear" class="btn btn-light btn-rounded">Clear Search History</button> 
+                 </ul>
+
+            </li>
+        </ul>
+
+    
+
+    </nav>
+
+
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                <button id="button-logo" class="d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <a href="index.html"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"><i class="fa fa-video-camera" aria-hidden="true"></i></a>  
+                        
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Search Form -->
+    <form class="search-form">
+        <div class="input-group">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input id="keywordTmdb" class="form-control" type="text" placeholder="Search for movies and tv shows" required>
+            <div id ='submitBtnTmdb' class="input-group-append"><button class="btn btn-primary" type="submit">Search </button></div>
+        </div>
+    </form>
+
+    <!-- Modal for empty searches -->
+
+    <div id ='emptySearch' class="alert alert-danger alert-dismissible fade show custom-alert" role="alert">
+        <strong>Please enter a movie or tv show</strong> such as Star Wars or Queens Gambit
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    <!-- Modal for failed searches -->
+
+    <div id ='failedSearch' class="alert alert-warning alert-dismissible fade show custom-alert" role="alert">
+        <strong>We're sorry we could not find a show!</strong> try another search like Star Wars or Queen's Gambit
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+<!-- Contains the results of the search -->
+<section id='results'>
+    <main class='container' id='moviesContainer'>
+        <section class='movies' id='movies'>
+            <div class='row' id='movieCardBoxes'>
+            </div>
+        </section>
+    </main>
+
+    <main class='container' id='tvContainer'>
+        <section class='movies' id='tv'>
+            <div class='row' id='tvCardBoxes'>
+            </div>
+        </section>
+    </main>
+</section>
+        <!-- Footer -->
+        <footer id="footerpad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-8 mx-auto">
+                        <ul class="list-inline text-center">
+                            <p class="text-muted text-center">Credits</p>
+                            <li class="list-inline-item">Charles Fisher<a id="social-footer-icon-github" href="https://github.com/cdfishe1"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item">Javiann Marrero<a id="social-footer-icon-github" href="https://github.com/javiistacks"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item">Thomas Schmidt<a id="social-footer-icon-github" href="https://github.com/Thomas-NW"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+                        </ul>
+                        <p class="copyright text-muted text-center">Powered by</p>
+                        <p class="text-muted text-center px-1"> <a href="https://www.themoviedb.org/documentation/api"><img id="powered-by" src="./assets/images/bs3.svg" alt= "TMDB logo"></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+    <script src="./assets/scripts/jquery.min.js"></script>
+    <script src="./assets/scripts/bootstrap.min.js"></script>
+    <script src="./assets/scripts/Collapsible-Sidebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+
+<!-- added extra file for header  -->
+    <script src="./assets/assetsH/jsH/jquery.min.js"></script>
+    <script src="./assets/assetsH/bootstrapH/js/bootstrap.min.js"></script>
+<!-- ^^^^^^^^^^^^^^^^^ -->
+
+    <script src='./assets/scripts/youtube.js'></script>
+    <script src='./assets/scripts/script.js'></script>
+</body>
+
+</html>
